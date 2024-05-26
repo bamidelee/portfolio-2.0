@@ -29,7 +29,7 @@ export default function HeroSection() {
                 <h1 className="font-bold text-[6.95vw] m-0">
                     Ibrahim Oluji<span className={`${kumar.className} text-primary-white relative z-10`}>de</span>
                 </h1>
-                <p className="text-[1rem] lg:text-[2vw]">
+                <p className="text-[4vw] lg:text-[2vw]">
                     Full-stack developer
                 </p>
                 <div className="mt-8 border-2 border-solid border-primary-black/50 w-fit rounded hover:bg-primary-black">
