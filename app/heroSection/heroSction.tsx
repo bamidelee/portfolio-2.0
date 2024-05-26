@@ -16,7 +16,7 @@ export default function HeroSection() {
     return (
         <div className="h-[80vh] lg:h-[115vh] min-h-[40rem]  w-full  font-medium relative">
             <div className="absolute w-[55%] h-[100%] top-[-1rem] lg:top-[-3rem] right-[-4vw]">
-                <Image alt="hero section" src={background} fill />
+                <Image alt="hero section" src={background} priority fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw"/>
             </div>
             <div>
 
