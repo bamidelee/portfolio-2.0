@@ -1,0 +1,48 @@
+'use client'
+
+import SectionH2 from "../sectionH2"
+import SkillCard from "./skillCard"
+import { useState } from "react"
+
+
+export default function Skills (){
+
+    const [activeTab, setActiveTab] = useState('all')
+
+
+    return (
+        <div className="mt-24">
+            <SectionH2 text="Skills & Tools"/>
+            <div className="flex gap-4 justify-center flex-wrap">
+                <button onClick={() => setActiveTab('all')}  className={`${activeTab === 'all' && 'bg-primary-black text-primary-white'} border-solid border-2 border-primary-black px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>All</button>
+                <button onClick={() => setActiveTab('frontend')} className={`${activeTab === 'frontend' && 'bg-primary-black text-primary-white'} border-solid border-2 border-primary-black px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Frontend</button>
+                <button onClick={() => setActiveTab('backend')} className={`${activeTab === 'backend' && 'bg-primary-black text-primary-white'} border-solid border-2 border-primary-black px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Backend</button>
+                <button onClick={() => setActiveTab('tools')} className={`${activeTab === 'tools' && 'bg-primary-black text-primary-white'} border-solid border-2 border-primary-black px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Tools</button>
+            </div>
+            <div className="mt-8 flex justify-center gap-8 lg:gap-12 w-[70%] mx-auto flex-wrap">
+                {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="flowbite:html-solid" text="HTML"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="flowbite:css-solid" text="CSS"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="ri:javascript-fill" text="Javascript"/>}
+               {(activeTab ==='all' || activeTab === 'frontend' || activeTab === 'backend') && <SkillCard icon="bxl:typescript" text="Typescript"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="mingcute:react-line" text="React"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="akar-icons:redux-fill" text="Redux"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="mdi:webpack" text="Webpack"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="simple-icons:jest" text="Jest"/>}
+               {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="bi:git" text="Git"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="ri:nextjs-fill" text="Next.js"/>}
+               {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="mdi:github" text="Github"/>}
+               {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="akar-icons:vercel-fill" text="Vercel"/>}
+               {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="mdi:aws" text="AWS"/>}
+               {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="simple-icons:render" text="Render"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="mdi:tailwind" text="Tailwind"/>}
+               {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="akar-icons:node-fill" text="Node.js"/>}
+               {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="simple-icons:express" text="Express"/>}
+               {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="bxl:mongodb" text="Mongodb"/>}
+               {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="teenyicons:graphql-outline" text="Graphql"/>}
+                {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="devicon-plain:bash" text="Bash"/>}
+               {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="teenyicons:python-solid" text="Python"/>}
+               {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="simple-icons:pug" text="Pug"/>}
+            </div>
+        </div>
+    )
+}
