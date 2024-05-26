@@ -10,7 +10,7 @@ export default function Projects(){
 
 
     return(
-        <div className="mt-[6rem] lg:mt-[12rem]">
+        <div className="mt-[6rem] lg:mt-[12rem]" id="projects">
             <SectionH2 text="Projects"/>
 
             <ProjectCard url="https://brookstech.ng/kohus" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind']} image={kohus} title="Kohus" details="KOHUS is a comprehensive case management tool designed to simplify legal workflows, making it easier for legal professionals to manage and organize their cases efficiently."/>

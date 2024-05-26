@@ -64,6 +64,12 @@ export default function StickyBar() {
                         <div className="w-0 h-1 bg-primary-white group-hover:w-full transition-all duration-300">
                         </div>
                     </div>
+
+                    <div className="group">
+                        <Link href='/#skills'>Skills</Link>
+                        <div className="w-0 h-1 bg-primary-white group-hover:w-full transition-all duration-300">
+                        </div>
+                    </div>
                     <div className="group">
                         <Link href='/#team'>CV</Link>
                         <div className="w-0 h-1 bg-primary-white group-hover:w-full transition-all duration-300">

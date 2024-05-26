@@ -11,7 +11,7 @@ export default function Skills (){
 
 
     return (
-        <div className="mt-24">
+        <div className="mt-24" id="skills">
             <SectionH2 text="Skills & Tools"/>
             <div className="flex gap-4 justify-center flex-wrap">
                 <button onClick={() => setActiveTab('all')}  className={`${activeTab === 'all' && 'bg-primary-black text-primary-white'} border-solid border-2 border-primary-black px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>All</button>

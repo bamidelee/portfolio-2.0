@@ -42,26 +42,26 @@ export default function SideBar() {
                     </div>
                 </div>
                 <div className="group">
-                    <Link href='/#aboutUs'>About us</Link>
+                    <Link href='/#about'>About me</Link>
                     <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">
 
                     </div>
                 </div>
 
                 <div className="group">
-                    <Link href='/#contactUs'>Contact us</Link>
+                    <Link href='/#projects'>Projects</Link>
+                    <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">
+
+                    </div>
+                </div>
+                <div className="/#skills">
+                    <Link href='/#skills'>Skills</Link>
                     <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">
 
                     </div>
                 </div>
                 <div className="group">
-                    <Link href='/#team'>Our team</Link>
-                    <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">
-
-                    </div>
-                </div>
-                <div className="group">
-                    <Link href='/products'>Products</Link>
+                    <Link href='/products'>Cv</Link>
                     <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">
 
                     </div>

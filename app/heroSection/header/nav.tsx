@@ -10,10 +10,13 @@ export default function Nav(){
                 <Link href={'/'}>Home</Link>
             </div>
             <div>
-                <Link href={'/'}>About me</Link>
+                <Link href={'#about'}>About me</Link>
             </div>
             <div>
-                <Link href={'/'}>Projects</Link>
+                <Link href={'#projects'}>Projects</Link>
+            </div>
+            <div>
+                <Link href={'#skills'}>Skills</Link>
             </div>
             <div>
                 <Link href={'/'}>CV</Link>
