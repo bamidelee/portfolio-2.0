@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import cvDoc from './cv.pdf'
 
 
 export default function SideBar() {
@@ -61,7 +62,7 @@ export default function SideBar() {
                     </div>
                 </div>
                 <div className="group">
-                    <Link href='/products'>Cv</Link>
+                    <Link href={cvDoc} target="_blank" rel="noopener noreferrer" download>Cv</Link>
                     <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">
 
                     </div>

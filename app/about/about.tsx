@@ -20,7 +20,7 @@ export default function About() {
                 <Image alt="ibrahim olujide" src={me} className="" height={200} width={200} />
                 <p className="text-center">
                     Committed to the idea of life-long learning, I am a full stack developer with a passion for all things web development.
-                    I&apos;m a full-stack developer who carries a keen eye for design in a user-first approach. My focus is in creating responsive layouts on the JavaScript stack of React and NodeJS, and from my background as a teacher I&apos;m well acquainted to bringing out solutions to complex problems.
+                    A developer who carries a keen eye for design in a user-first approach. My focus is in creating responsive layouts on the JavaScript stack of React and NodeJS, and from my background as a teacher I&apos;m well acquainted to bringing out solutions to complex problems.
                 </p>
 
             </div>

@@ -6,9 +6,14 @@ import SideBar from "./sideBar";
 import { Icon } from '@iconify/react';
 import { useEffect, useState } from "react";
 
+import cvDoc from './cv.pdf'
+
+
 
 
 export default function StickyBar() {
+
+
 
     
     const [showBar, setShowBar] = useState(false)
@@ -71,7 +76,7 @@ export default function StickyBar() {
                         </div>
                     </div>
                     <div className="group">
-                        <Link href='/#team'>CV</Link>
+                        <Link href={cvDoc} target="_blank" rel="noopener noreferrer" download>CV</Link>
                         <div className="w-0 h-1 bg-primary-white group-hover:w-full transition-all duration-300">
                         </div>
                     </div>
