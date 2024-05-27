@@ -62,7 +62,7 @@ export default function HeroSection() {
 
                     </div>
                 </div>
-                <div className="border-solid border-primary-black absolute border-2 left-[48%] bottom-0 w-fit rounded">
+                <div className="border-solid border-primary-black absolute border-2 left-[40%] lg:left-[48%] bottom-0 w-fit rounded">
                     <p className="bg-primary-black text-primary-white w-[6rem] text-center rounded px-4 py-8 text-[.8rem] relative right-[-8px] top-[-8px]">
                         4+ years of experience
                     </p>
