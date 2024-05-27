@@ -13,7 +13,7 @@ export default function About() {
     return (
         <div className="mt-24 px-4 lg:px-16 relative" id="about">
             <SectionH2 text="About me" />
-            <div className={` text-[13vw] absolute top-[-8vw] left-[-6vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
+            <div className={`${londrina.className} text-[13vw] absolute top-[-5vw] lg:top-[-8vw] left-[-4vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
                 Ibrahim Olujide
             </div>
             <div className="flex flex-col justify-center items-center mt-8">

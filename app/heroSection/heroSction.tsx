@@ -26,8 +26,8 @@ export default function HeroSection() {
                 <h1 className="font-normal text-[6.95vw] m-0 h-fit">
                     Hi, I&apos;m
                 </h1>
-                <h1 className="font-bold text-[6.95vw] m-0">
-                    Ibrahim Oluji<span className={`${kumar.className} text-primary-white relative z-10`}>de</span>
+                <h1 className="font-bold text-[7vw] lg:text-[6.93vw] m-0">
+                    Ibrahim Oluji<span className={` text-primary-white relative z-10`}>de</span>
                 </h1>
                 <p className="text-[4vw] lg:text-[2vw]">
                     Full-stack developer
@@ -68,7 +68,7 @@ export default function HeroSection() {
                     </p>
                 </div>
 
-                <div className={`${londrina.className} text-[14.5vw] absolute bottom-[-10vw] left-[-6vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
+                <div className={`${londrina.className} text-[14.5vw] absolute bottom-[-10vw] left-[-4vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
                     Ibrahim Olujide
                 </div>
 
