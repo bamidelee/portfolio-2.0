@@ -68,7 +68,7 @@ export default function HeroSection() {
                     </p>
                 </div>
 
-                <div className={`${londrina.className} text-[14.5vw] absolute bottom-[-10vw] left-[-4vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
+                <div className={`${londrina.className} text-[16vw] lg:text-[14.5vw] absolute bottom-[-10vw] left-[-4vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
                     Ibrahim Olujide
                 </div>
 
