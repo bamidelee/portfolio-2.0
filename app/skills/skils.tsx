@@ -40,6 +40,7 @@ export default function Skills (){
                {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="bxl:mongodb" text="Mongodb"/>}
                {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="teenyicons:graphql-outline" text="Graphql"/>}
                 {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="devicon-plain:bash" text="Bash"/>}
+                {(activeTab ==='all' || activeTab === 'tools') && <SkillCard icon="solar:figma-bold" text="Figma"/>}
                {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="teenyicons:python-solid" text="Python"/>}
                {(activeTab ==='all' || activeTab === 'backend') && <SkillCard icon="simple-icons:pug" text="Pug"/>}
             </div>
