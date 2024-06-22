@@ -23,6 +23,8 @@ export default function Skills (){
                 {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="flowbite:html-solid" text="HTML"/>}
                {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="flowbite:css-solid" text="CSS"/>}
                {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="ri:javascript-fill" text="Javascript"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="tabler:brand-react-native" text="React native"/>}
+               {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="cib:expo" text="Expo"/>}
                {(activeTab ==='all' || activeTab === 'frontend' || activeTab === 'backend') && <SkillCard icon="bxl:typescript" text="Typescript"/>}
                {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="mingcute:react-line" text="React"/>}
                {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="akar-icons:redux-fill" text="Redux"/>}
@@ -47,3 +49,4 @@ export default function Skills (){
         </div>
     )
 }
+

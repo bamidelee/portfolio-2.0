@@ -37,9 +37,9 @@ export default function HeroSection() {
                 </div>
                 <div className="absolute flex flex-col items-center right-[1rem] lg:right-[3rem] gap-4 lg:gap-8 text-primary-white text-1rem lg:text-[1.5rem] bottom-[30%] lg:bottom-[20%]">
                     <div className="w-[1px] h-[7rem] bg-primary-white"></div>
-                    <Link className='hover:scale-150 transition-all duration-300' href={'https://github.com/bamidelee'}><Icon icon="mdi:github" /></Link>
-                    <Link className='hover:scale-150 transition-all duration-300' href={'https://x.com/const_bamidele'}><Icon icon="pajamas:twitter" /></Link>
-                    <Link className='hover:scale-150 transition-all duration-300' href={'https://www.linkedin.com/in/olujide-ibrahim-67194223b/'}><Icon icon="mdi:linkedin" /></Link>
+                    <Link target="_blank" className='hover:scale-150 transition-all duration-300' href={'https://github.com/bamidelee'}><Icon icon="mdi:github" /></Link>
+                    <Link target="_blank" className='hover:scale-150 transition-all duration-300' href={'https://x.com/const_bamidele'}><Icon icon="pajamas:twitter" /></Link>
+                    <Link target="_blank" className='hover:scale-150 transition-all duration-300' href={'https://www.linkedin.com/in/ibrahim-olujide-67194223b/'}><Icon icon="mdi:linkedin" /></Link>
                 </div>
                 <div>
                     <div className="absolute left-[30%] bottom-[32vh] font-mono">

@@ -41,9 +41,9 @@ export default function Contact() {
                         Socials
                     </h2>
                     <p className='flex gap-4'>
-                        <Link href={'https://github.com/bamidelee'} className='hover:scale-150 transition-all duration-300'><Icon icon="mdi:github"/></Link>
-                        <Link href={'https://x.com/const_bamidele'} className='hover:scale-150 transition-all duration-300'><Icon icon="pajamas:twitter"  /></Link>
-                        <Link href={'https://www.linkedin.com/in/olujide-ibrahim-67194223b/'} className='hover:scale-150 transition-all duration-300'><Icon icon="mdi:linkedin"/></Link>
+                        <Link target='_blank' href={'https://github.com/bamidelee'} className='hover:scale-150 transition-all duration-300'><Icon icon="mdi:github"/></Link>
+                        <Link target='_blank' href={'https://x.com/const_bamidele'} className='hover:scale-150 transition-all duration-300'><Icon icon="pajamas:twitter"  /></Link>
+                        <Link target='_blank' href={'https://www.linkedin.com/in/ibrahim-olujide-67194223b/'} className='hover:scale-150 transition-all duration-300'><Icon icon="mdi:linkedin"/></Link>
                     </p>
 
                 </div>
