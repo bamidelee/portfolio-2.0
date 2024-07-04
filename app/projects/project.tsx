@@ -1,7 +1,7 @@
 
 import SectionH2 from "../sectionH2"
 import ProjectCard from "./projectsCard"
-import kohus from '../../public/kohus.png'
+import kohus from '../../public/brooks.png'
 import seakam from '../../public/seakam.png'
 import naijaodin from '../../public/naijaodin.png'
 import mall from '../../public/mall.png'
@@ -13,7 +13,7 @@ export default function Projects(){
         <div className="mt-[6rem] lg:mt-[12rem]" id="projects">
             <SectionH2 text="Projects"/>
 
-            <ProjectCard url="https://brookstech.ng/kohus" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind']} image={kohus} title="Kohus" details="KOHUS is a comprehensive case management tool designed to simplify legal workflows, making it easier for legal professionals to manage and organize their cases efficiently."/>
+            <ProjectCard url="https://brookstech.ng" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind']} image={kohus} title="Brookstech" details="Brookstech is Africa's premier technology consulting services firm, delivering cutting-edge solutions for your business."/>
 
             <ProjectCard url="https://www.seakam.ng/" tools={['Javascript', 'Next.js', 'Tailwind']} image={seakam} title="Seakam" details="Seakam Global Resources Limited is a local company in Nigeria specialized in manufacturing various herbal drinks that can also be taken socially." reverse={true}/>
 
