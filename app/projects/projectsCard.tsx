@@ -30,6 +30,7 @@ export default function ProjectCard({image, tools, details, title, url, reverse}
             </div>
             <div className={`${reverse && 'lg:col-start-1 lg:row-start-1' } bg-primary-black p-8`}>
                 <Image alt = {title} src={image} />
+                
             </div>
 
         </div>

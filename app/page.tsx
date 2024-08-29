@@ -9,7 +9,7 @@ import StickyBar from "./stickyBar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-4 lg:py-12 px-[4vw] bg-primary-white relative">
+    <main className="flex min-h-screen flex-col items-center justify-between pb-4 lg:pb-12 px-[2vw] bg-primary-white relative">
       <StickyBar/>
       <HeroSection/>
       <Projects/>
