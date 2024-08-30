@@ -17,8 +17,8 @@ export default function HeroSection() {
 
     return (
         <div className="h-[80vh] lg:h-[115vh] min-h-[40rem]  w-full  font-medium relative">
-            <div className="absolute w-[55%] h-[100%] z-10  top-[-1rem] lg:top-[-3rem] right-[-4vw]">
-                <Image alt="hero section z-10" src={background} priority objectFit="cover" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw"/>
+            <div  className="absolute w-[55%] overflow-hidden h-[100%] z-10  top-[-1rem] lg:top-[-3rem] right-[-4vw] ">
+               <div style={{backgroundImage: `url(${background.src})`}} className="w-full h-full kenburns-top bg-cover bg-center"></div>
             </div>
             <div>
 
@@ -31,7 +31,7 @@ export default function HeroSection() {
                 <h1 className="font-bold text-[7.3vw] lg:text-[7.25vw] m-0 word relative z-20">
                     Ibrahim Oluji<span className={` text-primary-white relative`}>de</span>
                 </h1>
-                <p className="text-[4vw] lg:text-[2vw]">
+                <p className="text-[4vw] lg:text-[2vw] text-flicker-in-glow">
                     Full-stack developer
                 </p>
                 <div className="mt-8 border-2 border-solid border-primary-black/50 w-fit rounded hover:bg-primary-black">
