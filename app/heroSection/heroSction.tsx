@@ -70,7 +70,7 @@ export default function HeroSection() {
                     </p>
                 </div>
 
-                <div className={`${pm.className} words text-[18vw] lg:text-[16vw] absolute bottom-[-10vw] left-[-4vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
+                <div className={`${pm.className} words text-[18vw] lg:text-[16vw] absolute bottom-[-15vw] left-[-4vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
                     <span>I</span>
                     <span>b</span>
                     <span>r</span>
