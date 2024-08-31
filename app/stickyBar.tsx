@@ -6,7 +6,7 @@ import SideBar from "./sideBar";
 import { Icon } from '@iconify/react';
 import { useEffect, useState } from "react";
 
-import cvDoc from './cv.pdf'
+import cvDoc from './cv.docx'
 
 
 
