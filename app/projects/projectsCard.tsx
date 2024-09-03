@@ -20,7 +20,7 @@ export default function ProjectCard({image, tools, details, title, url, reverse}
 
     return(
         <div className="grid lg:grid-cols-2 m-h-[8rem] mt-16 gap-4 border-b-solid border-b-2 border-b-[var(--foreground-rgb)] pb-8">
-            <ScrollAnimation duration={2} animateIn="fadeIn" className="flex flex-col gap-4 justify-center">
+            <ScrollAnimation duration={2} animateIn="fadeIn" className="flex flex-col gap-4 justify-center row-start-2 lg:row-start-auto">
                 <div className="flex gap-4 flex-wrap text-[.7rem] lg:text-[1rem]">
                     {
                         tools.map((tool, id) => <p className="border-solid border-2 border-[var(--foreground-rgb)] px-2 py-1 rounded-2xl" key={id}>{tool}</p>)
@@ -30,9 +30,9 @@ export default function ProjectCard({image, tools, details, title, url, reverse}
                 <p>{details}</p>
                 <Link className="py-1 px-8 bg-[var(--reverse-bg)] w-fit rounded-2xl text-[var(--reverse-color)] hover:bg-inherit hover:text-inherit hover:border-solid hover:border-2 hover:border-inherit" target="_blank" href={url}>Visit</Link>
             </ScrollAnimation>
-            <div className={`${reverse && 'lg:col-start-1 lg:row-start-1' } bg-primary-black p-8 overflow-hidden`}>
-                <ScrollAnimation animateIn="scale-in-hor-center" >
-                    <Image alt = {title} src={image} />
+            <div className={`  ${reverse && 'lg:col-start-1 lg:row-start-1 ' }  bg-[var(--foreground-rgb)] p-2  md:p-4 overflow-hidden`}>
+                <ScrollAnimation animateIn="scale-in-hor-center"className="relative h-[10rem] md:h-[18rem]"  >
+                    <Image alt = {title} src={image} fill className="object-contain" />
                 </ScrollAnimation>
                 
             </div>

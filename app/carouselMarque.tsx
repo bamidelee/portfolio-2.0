@@ -9,7 +9,7 @@ export default function CarouselMarque(){
 
     return(
         <div className=" w-screen">
-        <Marquee>
+        <Marquee speed={100}>
             <div className={`${pm.className} w-full h-full words text-[18vw] lg:text-[16vw] text-[var(--reverse-bg)] z-[0] whitespace-nowrap`}>
                 <span>I</span>
                 <span>b</span>
