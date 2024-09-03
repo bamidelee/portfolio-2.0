@@ -7,9 +7,9 @@ import cvDoc from './cv.docx'
 export default function SideBar() {
     const [sideBar, setSideBar] = useState(false)
 
-    
+
     const handleScroll = () => {
-       setSideBar(false)
+        setSideBar(false)
     };
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function SideBar() {
                 </button>
             </div>
 
-            <nav className={`${sideBar ? 'h-fit p-4' : 'h-0 p-0'} duration-300 transition-all overflow-hidden right-2 lg:right-16 rounded-lg bg-primary-black/90 absolute z-50 flex text-primary-white  flex-col gap-4 mt-[1.5rem] items-center col-span-2 justify-self-center font-serif backdrop-blur`}>
+            <nav className={`fixed  ${sideBar ? 'right-0 ' : 'right-[-200px] '} backdrop-blur  top-16 w-[200px] p-4  duration-300 transition-all overflow-hidden backdrop-brightness-50  bg-primary-black/30 fixed z-50 flex text-primary-white  flex-col gap-4  items-center col-span-2 justify-self-center font-serif   `}>
                 <div className="group">
                     <Link href='/'>Home</Link>
                     <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">

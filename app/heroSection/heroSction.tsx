@@ -2,23 +2,21 @@
 import Header from "./header/header"
 import Image from "next/image"
 import background from '../../public/original-654f84ecad94a02a4a97e52a291dba45.jpg'
-import { Kumar_One_Outline, Permanent_Marker, Lobster  } from "next/font/google"
 import Link from "next/link"
 import { Icon } from '@iconify/react';
-import { Londrina_Outline } from "next/font/google"
 
 
-const kumar = Kumar_One_Outline({ weight: '400', subsets: ["latin"] });
-const londrina = Londrina_Outline({ weight: '400', subsets: ["latin"] })
-const pm = Lobster({ weight: '400', subsets: ["latin"] })
+
+
+
 
 
 export default function HeroSection() {
 
     return (
         <div className="h-[80vh] lg:h-[115vh] min-h-[40rem]  w-full  font-medium relative">
-            <div  className="absolute w-[55%] overflow-hidden h-[100%] z-10  top-[-1rem] lg:top-[-3rem] right-[-4vw] ">
-               <div style={{backgroundImage: `url(${background.src})`}} className="w-full h-full kenburns-top bg-cover bg-center"></div>
+            <div className="absolute w-[55%] overflow-hidden h-[100%] z-10  top-[-1rem] lg:top-[-3rem] right-[-4vw] ">
+                <div style={{ backgroundImage: `url(${background.src})` }} className="w-full h-full kenburns-top bg-cover bg-center"></div>
             </div>
             <div>
 
@@ -34,8 +32,8 @@ export default function HeroSection() {
                 <p className="text-[4vw] lg:text-[2vw] text-flicker-in-glow">
                     Full-stack developer
                 </p>
-                <div className="mt-8 border-2 border-solid border-primary-black/50 w-fit rounded hover:bg-primary-black">
-                    <Link href={'#contact'} className="bg-primary-black text-primary-white py-2 px-4  rounded relative right-[-5px] bottom-[10px] hover:bg-primary-white hover:text-primary-black hover:border-solid hover:border-2 hover:border-primary-black">Contact</Link>
+                <div className="mt-8 border-2 border-solid border-[var(--reverse-bg)] w-fit rounded hover:bg-[var(--reverse-bg)]">
+                    <Link href={'#contact'} className="bg-[var(--reverse-bg)]  text-[var(--reverse-color)] py-2 px-4  rounded relative right-[-5px] bottom-[10px] hover:bg-[var(--background-start-rgb)] hover:text-[var(--foreground-rgb)] hover:border-solid hover:border-2 hover:border-[var(--foreground-rgb)]">Contact</Link>
                 </div>
                 <div className="absolute flex flex-col items-center right-[1rem] lg:right-[3rem] gap-4 lg:gap-8 text-primary-white text-1rem lg:text-[1.5rem] z-20 bottom-[30%] lg:bottom-[20%]">
                     <div className="w-[1px] h-[7rem] bg-primary-white"></div>
@@ -65,28 +63,12 @@ export default function HeroSection() {
                     </div>
                 </div>
                 <div className="border-solid border-primary-black absolute border-2 left-[45%] z-20 lg:left-[48%] bottom-0 w-fit rounded">
-                    <p className="bg-primary-black text-primary-white w-[6rem] text-center rounded px-4 py-8 text-[.8rem] relative right-[-8px] top-[-8px]">
+                    <p className="bg-[var(--reverse-bg)] text-[var(--reverse-color)] w-[6rem] text-center rounded px-4 py-8 text-[.8rem] relative right-[-8px] top-[-8px]">
                         4+ years of experience
                     </p>
                 </div>
 
-                <div className={`${pm.className} words text-[18vw] lg:text-[16vw] absolute bottom-[-15vw] left-[-4vw] text-primary-black/50 opacity-15 z-[0] whitespace-nowrap`}>
-                    <span>I</span>
-                    <span>b</span>
-                    <span>r</span>
-                    <span>a</span>
-                    <span>h</span>
-                    <span>i</span>
-                    <span>m</span>
-                   <span>  </span>
-                    <span>O</span>
-                    <span>l</span>
-                    <span>u</span>
-                    <span>j</span>
-                    <span>i</span>
-                    <span>d</span>
-                    <span>e</span>
-                </div>
+               
 
             </div>
         </div>

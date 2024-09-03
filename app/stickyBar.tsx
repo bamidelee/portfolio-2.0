@@ -15,25 +15,25 @@ export default function StickyBar() {
 
 
 
-    
+
     const [showBar, setShowBar] = useState(false)
 
     let scrollYPosition = 0;
     let newScrollPos = 0
-    
+
 
     const handleScroll = () => {
         const newScrollYPosition = window.scrollY;
         newScrollPos = newScrollYPosition
 
-        if(scrollYPosition > newScrollPos && newScrollPos > 200){
+        if (scrollYPosition > newScrollPos && newScrollPos > 200) {
             setShowBar(true)
-           
+
         }
 
-        else{
+        else {
             setShowBar(false)
-           
+
         }
 
         scrollYPosition = newScrollPos
@@ -47,10 +47,10 @@ export default function StickyBar() {
     }, [])
 
     return (
-        <div className={`fixed ${showBar ? 'top-0' : 'top-[-6rem]'} z-50 w-full mx-auto px:0 left-0 md:px-4 lg:px-16 transition-all duration-300 backdrop-brightness-50 backdrop-blur bg-primary-black/30 `}>
-            <div className={`col-span-3 h-16 grid grid-cols-2  gap-4 items-center bg-secondary-blue p-2 px-4 md:p-4 lg:px-16 md:pb-16 text-primary-white`} >
+        <div className={`fixed ${showBar ? 'top-0' : 'top-[-6rem]'} z-50 w-full mx-auto  transition-all duration-300  `}>
+            <div className={`col-span-3 h-16 grid grid-cols-2 w-full px:0 left-0 md:px-4 lg:px-16  gap-4 items-center bg-secondary-blue p-2 px-4 md:p-4 lg:px-16 md:pb-16 text-primary-white backdrop-brightness-50 backdrop-blur bg-primary-black/30`} >
                 <h2>
-                   Ibrahim
+                    Ibrahim
                 </h2>
                 <nav className="text-primary-white hidden lg:flex flex-row gap-8 items-center justify-self-end font-serif">
                     <div className="group">
@@ -81,9 +81,10 @@ export default function StickyBar() {
                         </div>
                     </div>
                 </nav>
-                <div className="justify-self-end h-fit flex flex-row text-primary-white items-center">
-                    <SideBar/>
-                </div>
+
+            </div>
+            <div className="justify-self-end h-fit flex flex-row text-primary-white absolute right-4 top-4 items-center">
+                <SideBar />
             </div>
         </div>
     )

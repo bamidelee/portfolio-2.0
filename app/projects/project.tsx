@@ -11,7 +11,7 @@ export default function Projects(){
 
 
     return(
-        <div className="mt-[6rem] lg:mt-[12rem]" id="projects">
+        <div className=" mt-4 mt-[4rem]" id="projects">
             <SectionH2 text="Projects"/>
 
             <ProjectCard url="https://brookstech.ng" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind']} image={kohus} title="Brookstech" details="Brookstech is Africa's premier technology consulting services firm, delivering cutting-edge solutions for your business."/>

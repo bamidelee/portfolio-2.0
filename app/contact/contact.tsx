@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="mt-24" id='contact'>
             <SectionH2 text="Contact" />
             <div className='flex flex-col lg:flex-row gap-4 lg:gap-12'>
-                <div className='flex flex-col items-center border-solid border-2 border-primary-black rounded-lg p-4 gap-2 min-w-[25%]'>
+                <div className='flex flex-col items-center border-solid border-2 border-[var(--foreground-rgb)] rounded-lg p-4 gap-2 min-w-[25%]'>
 
                     <Icon icon="material-symbols:call" />
                     <h2 className='font-bold'>
@@ -24,7 +24,7 @@ export default function Contact() {
                     </a>
 
                 </div>
-                <div className='flex flex-col items-center border-solid border-2 border-primary-black bg-primary-black text-primary-white rounded-lg p-4 gap-2 min-w-[30%]'>
+                <div className='flex flex-col items-center border-solid border-2 border-[var(--foreground-rgb)] bg-[var(--foreground-rgb)] text-[var(--reverse-color)] rounded-lg p-4 gap-2 min-w-[30%]'>
                     <Icon icon="material-symbols:mail" />
                     <h2 className='font-bold'>
                         Email
@@ -34,7 +34,7 @@ export default function Contact() {
                     </a>
 
                 </div>
-                <div className='flex flex-col items-center border-solid border-2 border-primary-black rounded-lg p-4 gap-2 min-w-[25%]'>
+                <div className='flex flex-col items-center border-solid border-2 border-[var(--foreground-rgb)] rounded-lg p-4 gap-2 min-w-[25%]'>
 
                 <Icon icon="mdi:web" />
                     <h2 className='font-bold'>
