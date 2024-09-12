@@ -19,7 +19,7 @@ export default function Skills (){
                 <button onClick={() => setActiveTab('backend')} className={`${activeTab === 'backend' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid border-2 border-[var(--foreground-rgb)] px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Backend</button>
                 <button onClick={() => setActiveTab('tools')} className={`${activeTab === 'tools' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid border-2 border-[var(--foreground-rgb)] px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Tools</button>
             </div>
-            <div className="mt-8 flex justify-center gap-8 lg:gap-12 w-[70%] mx-auto flex-wrap">
+            <div className="mt-8 flex justify-center gap-8 lg:gap-12 lg:w-[70%] mx-auto flex-wrap">
                 {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="flowbite:html-solid" text="HTML"/>}
                {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="flowbite:css-solid" text="CSS"/>}
                {(activeTab ==='all' || activeTab === 'frontend') && <SkillCard icon="ri:javascript-fill" text="Javascript"/>}
