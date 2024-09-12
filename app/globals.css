@@ -157,17 +157,18 @@ html {
 
 .words {
   color: var(--reverse-color);
-  line-height: 1.5;
+
 }
 
 .words span {
   display: inline-block;
-  animation: move 3s ease-in-out infinite;
+  text-shadow: 0 10px 30px black;
+ 
 }
 
 @keyframes move {
   0% {
-    transform: translate(-30%, 0);
+    
   }
 
   50% {
@@ -175,7 +176,7 @@ html {
   }
 
   100% {
-    transform: translate(30%, 0);
+  
   }
 }
 

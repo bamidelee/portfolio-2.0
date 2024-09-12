@@ -32,7 +32,7 @@ export default function ProjectCard({image, tools, details, title, url, reverse}
             </ScrollAnimation>
             <div className={`  ${reverse && 'lg:col-start-1 lg:row-start-1 ' }  bg-[var(--foreground-rgb)] p-2  md:p-4 overflow-hidden`}>
                 <ScrollAnimation animateIn="scale-in-hor-center"className="relative h-[10rem] md:h-[18rem]"  >
-                    <Image alt = {title} src={image} fill className="object-contain" />
+                    <Image alt = {title} src={image} fill className="object-contain"  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </ScrollAnimation>
                 
             </div>
