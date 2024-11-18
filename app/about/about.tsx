@@ -20,7 +20,7 @@ export default function About() {
             <div className="flex flex-col justify-center items-center mt-8">
                 <Image alt="ibrahim olujide" src={me} className="" height={200} width={200} />
                 <ScrollAnimation animateIn="focus-in-contract" className="text-center ">
-                    Committed to the idea of life-long learning, I am a full stack developer with a passion for all things web development.
+                    Committed to the idea of life-long learning, I am a Software developer with a passion for all things Software development.
                     A developer who carries a keen eye for design in a user-first approach. My focus is in creating responsive layouts on the JavaScript stack of React and NodeJS, and from my background as a teacher I&apos;m well acquainted to bringing out solutions to complex problems.
                 </ScrollAnimation>
 

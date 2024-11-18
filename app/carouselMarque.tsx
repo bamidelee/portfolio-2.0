@@ -31,16 +31,14 @@ export default function CarouselMarque() {
                         <span>e</span>
                     </div>
                     <div className= 'mx-8 lg:mx-16'>
-                        <span>F</span>
-                        <span>u</span>
-                        <span>l</span>
-                        <span>l</span>
-                        <span>-</span>
-                        <span>s</span>
+                        <span>S</span>
+                        <span>o</span>
+                        <span>f</span>
                         <span>t</span>
+                        <span>w</span>
                         <span>a</span>
-                        <span>c</span>
-                        <span>k</span>
+                        <span>r</span>
+                        <span>e</span>
 
                     </div>
 

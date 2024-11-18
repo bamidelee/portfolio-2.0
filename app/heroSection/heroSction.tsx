@@ -30,7 +30,7 @@ export default function HeroSection() {
                     Ibrahim Oluji<span className={` text-primary-white relative`}>de</span>
                 </h1>
                 <p className="text-[4vw] lg:text-[2vw] text-flicker-in-glow">
-                    Full-stack developer
+                   Software developer
                 </p>
                 <div className="mt-8 border-2 border-solid border-[var(--reverse-bg)] w-fit rounded hover:bg-[var(--reverse-bg)]">
                     <Link href={'#contact'} className="bg-[var(--reverse-bg)]  text-[var(--reverse-color)] py-2 px-4  rounded relative right-[-5px] bottom-[10px] hover:bg-[var(--background-start-rgb)] hover:text-[var(--foreground-rgb)] hover:border-solid hover:border-2 hover:border-[var(--foreground-rgb)]">Contact</Link>
@@ -42,7 +42,7 @@ export default function HeroSection() {
                     <Link target="_blank" className='hover:scale-150 transition-all duration-300' href={'https://www.linkedin.com/in/ibrahim-olujide-67194223b/'}><Icon icon="mdi:linkedin" /></Link>
                 </div>
                 <div>
-                    <div className="absolute left-[30%] md:left-[35%]  h-[100px] bottom-[20vh] font-mono">
+                    <div className="absolute left-[30%] md:left-[35%]  h-[100px] bottom-[20vh] font-mono rotate">
                         <Icon icon="ph:triangle-fill" className="relative top-[40px] rotate-[-25deg]" />
                         <p className="left-0 top-0 origin-bottom absolute h-[50px] w-[20px] rotate-[25deg]">o</p>
                         <p className="left-0 top-0 origin-bottom absolute h-[50px] w-[20px] rotate-[50deg]">l</p>
