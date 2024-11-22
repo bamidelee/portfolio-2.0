@@ -15,7 +15,7 @@ export default function Projects(){
         <div className=" mt-4 mt-[4rem]" id="projects">
             <SectionH2 text="Projects"/>
 
-            <ProjectCard url="https://www.getwater.africa/" tools={['Javascript', 'Node.js', 'Next.js', 'Fastify', 'Tailwind', 'Prisma', 'Postgres']} image={getWater} title="Get-water" details="A contactless way to have clean water delivered to you. On demand delivery and meter supply of water for household and commercial businesses." reverse/>
+            <ProjectCard url="https://www.getwater.africa/" tools={['Javascript', 'Node.js', 'Next.js', 'Fastify', 'Tailwind', 'Prisma', 'PostgreSQL']} image={getWater} title="Get-water" details="A contactless way to have clean water delivered to you. On demand delivery and meter supply of water for household and commercial businesses." reverse/>
 
             <ProjectCard url="https://www.kohus.africa/" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind', 'Mongodb']} image={kohus} title="Kohus" details="KOHUS is an online platform providing digital solution for Lawyer, Law Firm, Bar Association, and Citizens. Filing a new case, Respond to case and Search any case by number."/>
 

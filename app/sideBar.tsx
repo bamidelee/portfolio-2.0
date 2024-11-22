@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import cvDoc from './cv.docx'
+import cvDoc from './cv pro 1.pdf'
 
 
 export default function SideBar() {

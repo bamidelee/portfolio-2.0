@@ -1,5 +1,5 @@
 import Link from "next/link";
-import cvDoc from '../../cv.docx'
+import cvDoc from '../../cv pro 1.pdf'
 
 
 

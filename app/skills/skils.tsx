@@ -46,7 +46,7 @@ export default function Skills() {
                 {(activeTab === 'all' || activeTab === 'backend') && <SkillCard icon="teenyicons:python-solid" text="Python" />}
                 {(activeTab === 'all' || activeTab === 'backend') && <SkillCard icon="simple-icons:pug" text="Pug" />}
                 {(activeTab === 'all' || activeTab === 'backend') && <SkillCard icon="ph:file-sql" text="SQL" />}
-                {(activeTab === 'all' || activeTab === 'backend') && <SkillCard icon="akar-icons:postgresql-fill" text="Postgres" />}
+                {(activeTab === 'all' || activeTab === 'backend') && <SkillCard icon="akar-icons:postgresql-fill" text="PostgreSQL" />}
                 {(activeTab === 'all' || activeTab === 'backend') && <SkillCard icon="simple-icons:prisma" text="Prisma" />}
                 {(activeTab === 'all' || activeTab === 'backend') && <SkillCard icon="devicon-plain:fastify" text="Fastify" />}
             </div>
