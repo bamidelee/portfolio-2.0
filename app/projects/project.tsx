@@ -15,7 +15,7 @@ export default function Projects(){
         <div className=" mt-[3rem] lg:mt-[4rem] " id="projects">
             <SectionH2 text="Projects"/>
 
-            <div className="grid grid-cols-1 gap-8 lg:gap-8 lg:grid-cols-2 mt-8 ">
+            <div className="grid grid-cols-1 gap-8 lg:gap-8 lg:grid-cols-2 mt-8">
                 <ProjectCard url="https://www.getwater.africa/" tools={['Javascript', 'Node.js', 'Next.js', 'Fastify', 'Tailwind', 'Prisma', 'PostgreSQL']} image={getWater} title="Get-water" details="A contactless way to have clean water delivered to you. On demand delivery and meter supply of water for household and commercial businesses." reverse/>
                 <ProjectCard url="https://www.kohus.africa/" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind', 'Mongodb']} image={kohus} title="Kohus" details="KOHUS is an online platform providing digital solution for Lawyer, Law Firm, Bar Association, and Citizens. Filing a new case, Respond to case and Search any case by number."/>
                 <ProjectCard url="https://optimalsolutions-beta.vercel.app/" tools={['Javascript', 'Next.js', 'Tailwind']} image={optimal} title="Optimal Solutions" details="OptimalSolution®, your trusted partner in comprehensive pest control solutions. With over a decade of experience and commitment to excellence, We specialise in delivering tailored pest management services for homes and businesses. Our mission is to provide effective, safe, and sustainable pest control to protect your property and ensure your peace of mind." reverse/>

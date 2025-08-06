@@ -4,6 +4,8 @@ import Image from "next/image"
 import me from '../../public/imgbin_hacker-png.png'
 import { Londrina_Outline } from "next/font/google"
 import ScrollAnimation from 'react-animate-on-scroll';
+import ink from '@/public/ink.png'
+import writing from '@/public/writing.png'
 
 const londrina = Londrina_Outline({ weight: '400', subsets: ["latin"] })
 
@@ -13,6 +15,8 @@ export default function About() {
 
     return (
         <div className="mt-24 px-4 lg:px-16 relative" id="about">
+            <Image src={ink} alt=" " className="absolute top-[10%] right-0 w-[20%] lg:w-[10%]"/>
+              <Image src={writing} alt=" " className="absolute bottom-[-10%] md:bottom-[-20%] left-0 w-[20%] lg:w-[10%]"/>
             <SectionH2 text="About me" />
             <div className={`${londrina.className} text-[16vw] lg:text-[13vw] absolute top-[-5vw] lg:top-[-8vw]   opacity-15 z-[0] whitespace-nowrap`}>
                 Ibrahim Olujide

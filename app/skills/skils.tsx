@@ -4,14 +4,14 @@ import SectionH2 from "../sectionH2"
 import SkillCard from "./skillCard"
 import { useState } from "react"
 
-
 export default function Skills() {
 
     const [activeTab, setActiveTab] = useState('all')
 
 
     return (
-        <div className="mt-24" id="skills">
+        <div className="mt-24 relative" id="skills">
+             
             <SectionH2 text="Skills & Tools" />
             <div className="flex gap-4 justify-center flex-wrap mt-8">
                 <button onClick={() => setActiveTab('all')} className={`${activeTab === 'all' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid font-garamond border border-[var(--foreground-rgb)] px-4 py-1 rounded-lg transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>All</button>
