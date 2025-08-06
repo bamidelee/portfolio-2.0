@@ -35,7 +35,7 @@ export default function SideBar() {
                 </button>
             </div>
 
-            <nav className={`fixed  ${sideBar ? 'right-0 ' : 'right-[-200px] '} backdrop-blur  top-16 w-[200px] p-4  duration-300 transition-all overflow-hidden backdrop-brightness-50  bg-primary-black/30 fixed z-50 flex text-primary-white  flex-col gap-4  items-center col-span-2 justify-self-center font-serif   `}>
+            <nav className={`fixed  ${sideBar ? 'right-0 ' : 'right-[-200px] '} backdrop-blur  top-16 w-[200px] p-4  duration-300 transition-all overflow-hidden backdrop-brightness-50  bg-primary-black/30 fixed z-50 flex text-primary-white  flex-col gap-4  items-center col-span-2 justify-self-center font-pirata text-[1.2rem]    `}>
                 <div className="group">
                     <Link href='/'>Home</Link>
                     <div className="w-0 h-1 bg-primary-blue group-hover:w-full transition-all duration-300">

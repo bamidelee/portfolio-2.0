@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: #302a27;
+  --foreground-rgb: #2d1b0f;
   --background-start-rgb: #f5f5f5;
   --background-end-rgb: 255, 255, 255;
   --reverse-color: #f5f5f5;
-  --reverse-bg: #302a27;
+  --reverse-bg: #2d1b0f;
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -8,7 +8,7 @@ export default function Header (){
 
     return(
         <div className="w-full flex justify-between relative">
-            <h1>
+            <h1 className="text-3xl font-bold font-pirata">
                     Ibrahim
                 </h1>
             <Nav/>

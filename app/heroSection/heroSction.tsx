@@ -1,7 +1,7 @@
 'use client'
 import Header from "./header/header"
 import Image from "next/image"
-import background from '../../public/original-654f84ecad94a02a4a97e52a291dba45.jpg'
+import background from '../../public/Lucid_Origin_medieval_portrait_of_a_computer_programmer_with_a_2.jpg'
 import Link from "next/link"
 import { Icon } from '@iconify/react';
 
@@ -14,7 +14,7 @@ import { Icon } from '@iconify/react';
 export default function HeroSection() {
 
     return (
-        <div className="h-[80vh] lg:h-[115vh] min-h-[40rem]  w-full  font-medium relative">
+        <div className="h-[80vh] lg:h-[115vh] min-h-[40rem]  w-full  font-medium relative font-garamond">
             <div className="absolute w-[55%] overflow-hidden h-[100%] z-10  top-[-1rem] lg:top-[-3rem] right-[-4vw] ">
                 <div style={{ backgroundImage: `url(${background.src})` }} className="w-full h-full kenburns-top bg-cover bg-center"></div>
             </div>
@@ -23,13 +23,13 @@ export default function HeroSection() {
                 <Header />
             </div>
             <div className="mt-[15vh] lg:mt-[18vh] ">
-                <h1 className="font-normal text-[6.95vw] m-0 h-fit word">
+                <h1 className="font-normal text-[6.95vw] m-0 h-fit word font-pirata">
                     Hi, I&apos;m
                 </h1>
-                <h1 className="font-bold text-[7.3vw] lg:text-[7.25vw] m-0 word relative z-20">
-                    Ibrahim Oluji<span className={` text-primary-white relative`}>de</span>
+                <h1 className="font-bold text-[9.5vw] lg:text-[9.4vw] m-0 word relative z-20 font-pirata">
+                    Ibrahim Oluji<span className={` text-[#f6f1e7] relative`}>de</span>
                 </h1>
-                <p className="text-[4vw] lg:text-[2vw] text-flicker-in-glow">
+                <p className="text-[4vw] lg:text-[2vw] text-flicker-in-glow font-garamond">
                    Software developer
                 </p>
                 <div className="mt-8 border-2 border-solid border-[var(--reverse-bg)] w-fit rounded hover:bg-[var(--reverse-bg)]">

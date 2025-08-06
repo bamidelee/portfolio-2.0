@@ -13,11 +13,11 @@ export default function Skills() {
     return (
         <div className="mt-24" id="skills">
             <SectionH2 text="Skills & Tools" />
-            <div className="flex gap-4 justify-center flex-wrap">
-                <button onClick={() => setActiveTab('all')} className={`${activeTab === 'all' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid border-2 border-[var(--foreground-rgb)] px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>All</button>
-                <button onClick={() => setActiveTab('frontend')} className={`${activeTab === 'frontend' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid border-2 border-[var(--foreground-rgb)] px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Frontend</button>
-                <button onClick={() => setActiveTab('backend')} className={`${activeTab === 'backend' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid border-2 border-[var(--foreground-rgb)] px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Backend</button>
-                <button onClick={() => setActiveTab('tools')} className={`${activeTab === 'tools' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid border-2 border-[var(--foreground-rgb)] px-4 py-1 rounded-2xl transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Tools</button>
+            <div className="flex gap-4 justify-center flex-wrap mt-8">
+                <button onClick={() => setActiveTab('all')} className={`${activeTab === 'all' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid font-garamond border border-[var(--foreground-rgb)] px-4 py-1 rounded-lg transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>All</button>
+                <button onClick={() => setActiveTab('frontend')} className={`${activeTab === 'frontend' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid font-garamond border border-[var(--foreground-rgb)] px-4 py-1 rounded-lg transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Frontend</button>
+                <button onClick={() => setActiveTab('backend')} className={`${activeTab === 'backend' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid font-garamond border border-[var(--foreground-rgb)] px-4 py-1 rounded-lg transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Backend</button>
+                <button onClick={() => setActiveTab('tools')} className={`${activeTab === 'tools' && 'bg-[var(--reverse-bg)] text-[var(--reverse-color)]'} border-solid font-garamond border border-[var(--foreground-rgb)] px-4 py-1 rounded-lg transition-all duration-300 text-[.8rem] lg:text-[1rem] `}>Tools</button>
             </div>
             <div className="mt-8 flex justify-center gap-8 lg:gap-12 lg:w-[70%] mx-auto flex-wrap">
                 {(activeTab === 'all' || activeTab === 'frontend') && <SkillCard icon="flowbite:html-solid" text="HTML" />}

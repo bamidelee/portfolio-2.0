@@ -5,7 +5,7 @@ interface Props{
 
 export default function SectionH2({text}:Props){
     return(
-        <h2 className="text-[2.5rem] text-center font-bold">
+        <h2 className="md:text-[3.5rem] text-[2.5rem] text-center font-bold font-pirata">
             {text}
         </h2>
     )
