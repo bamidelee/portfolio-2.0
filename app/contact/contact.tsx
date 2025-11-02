@@ -14,7 +14,7 @@ export default function Contact() {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-12">
-          <SectionHeading>Let's Connect</SectionHeading>
+          <SectionHeading>Let&apos;s Connect</SectionHeading>
           <p className="body-lg text-dark-navy/70 max-w-2xl mx-auto">
             Have a project in mind or just want to chat? Feel free to reach out through any of these channels.
           </p>
