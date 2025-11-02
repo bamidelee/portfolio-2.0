@@ -1,45 +1,79 @@
 'use client'
-import Image from "next/image"
-import { StaticImageData } from "next/image"
-import Link from "next/link"
-import "animate.css/animate.compat.css"
-import ScrollAnimation from 'react-animate-on-scroll';
 
+import Image, { type StaticImageData } from "next/image"
+import Link from "next/link"
+import { Icon } from '@iconify/react';
 
 interface Props {
-    image: StaticImageData,
-    tools: string[],
-    details: string,
-    title: string,
-    url: string,
-    reverse?: boolean
+  image: StaticImageData;
+  title: string;
+  details: string;
+  tools: string[];
+  url: string;
+  featured?: boolean;
 }
 
-export default function ProjectCard({ image, tools, details, title, url, reverse }: Props) {
-
-
-    return (
-        <div className="grid  min-h-[30rem] gap-4 md:p-8 p-4  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#F6E1BB] via-[#f7f1dd] to-[#CCAE86]">
-            <ScrollAnimation animateOnce duration={2} animateIn="fadeIn" className="flex flex-col gap-4 justify-center row-start-2 lg:row-start-auto">
-                <div className="flex gap-2 md:gap-4 flex-wrap text-[1rem]">
-                    {
-                        tools.map((tool, id) => <p className=" px-2 py-1 rounded-2xl font-pirata" key={id}>{tool}</p>)
-                    }
-                </div>
-                <h2 className="font-bold text-[2rem] font-pirata">{title}</h2>
-                <p className="font-garamond text-[1.2rem]">{details}</p>
-                <Link className="py-1 px-8 border border-[var(--reverse-bg)] text-[var(--reverse-bg)] w-fit rounded-lg  font-garamond" target="_blank" href={url}>Visit</Link>
-
-            </ScrollAnimation>
-            <div className={`  ${reverse && 'lg:col-start-1 lg:row-start-1 '}  bg-[url('/scroll.png')] bg-no-repeat bg-center bg-contain p-8 w-full h-[10rem] md:h-[20rem]  md:p-16 overflow-hidden`}>
-               
-                <div className="relative h-full w-full"  >
-                   
-                    <Image alt={title} src={image} fill className="object-contain" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-                </div>
-
-            </div>
-
+export default function ProjectCard({ image, title, details, tools, url, featured = false }: Props) {
+  return (
+    <Link 
+      href={url} 
+      target="_blank"
+      className="group relative overflow-hidden md:rounded-3xl rounded-lg bg-white shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 flex flex-col h-full border border-gray-100"
+    >
+      {/* Image container - fixed height to prevent stretching */}
+      <div className="relative md:h-[19rem] h-[10rem] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+        <Image 
+          src={image} 
+          alt={title}
+          className="object-cover transition-all duration-700 group-hover:scale-110"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-navy/90 via-dark-navy/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        
+        {/* Hover overlay with icon */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
+          <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-500">
+            <Icon 
+              icon="ph:arrow-up-right-bold" 
+              className="text-primary-blue" 
+              width="32" 
+              height="32" 
+            />
+          </div>
         </div>
-    )
+      </div>
+
+      {/* Content */}
+      <div className="md:p-8 p-3 flex-1 flex flex-col">
+        <div className="flex items-start justify-between mb-4">
+          <h3 className="font-space text-2xl md:text-3xl font-bold text-dark-navy group-hover:text-primary-blue transition-colors duration-300">
+            {title}
+          </h3>
+        </div>
+
+        <p className="text-dark-navy/70 mb-6  flex-1 leading-relaxed text-sm">
+          {details}
+        </p>
+
+        {/* Tech stack */}
+        <div className="flex flex-wrap gap-2">
+          {tools.slice(0, featured ? 6 : 4).map((tool, index) => (
+            <span 
+              key={index}
+              className="px-4 py-2 text-xs font-semibold bg-gradient-to-r from-primary-blue/10 to-primary-purple/10 text-primary-blue rounded-lg border border-primary-blue/20 hover:border-primary-blue/40 transition-colors"
+            >
+              {tool}
+            </span>
+          ))}
+          {tools.length > (featured ? 6 : 4) && (
+            <span className="px-4 py-2 text-xs font-semibold bg-gradient-to-r from-primary-blue/10 to-primary-purple/10 text-primary-blue rounded-lg border border-primary-blue/20">
+              +{tools.length - (featured ? 6 : 4)}
+            </span>
+          )}
+        </div>
+      </div>
+    </Link>
+  );
 }

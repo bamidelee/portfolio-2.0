@@ -1,5 +1,5 @@
-
-import SectionH2 from "../sectionH2"
+'use client'
+import SectionHeading from "../components/SectionHeading"
 import ProjectCard from "./projectsCard"
 import kohus from '../../public/kohus.png'
 import seakam from '../../public/seakam.png'
@@ -7,22 +7,114 @@ import naijaodin from '../../public/naijaodin.png'
 import mall from '../../public/mall.png'
 import optimal from '../../public/optimal.png'
 import getWater from '../../public/get-water.png'
+import map from '../../public/map.png'
+import londonian from '../../public/londonian.png'
+import investor from '../../public/investor.png'
 
-export default function Projects(){
-
-
-    return(
-        <div className=" mt-[3rem] lg:mt-[4rem] " id="projects">
-            <SectionH2 text="Projects"/>
-
-            <div className="grid grid-cols-1 gap-8 lg:gap-8 lg:grid-cols-2 mt-8">
-                <ProjectCard url="https://www.getwater.africa/" tools={['Javascript', 'Node.js', 'Next.js', 'Fastify', 'Tailwind', 'Prisma', 'PostgreSQL']} image={getWater} title="Get-water" details="A contactless way to have clean water delivered to you. On demand delivery and meter supply of water for household and commercial businesses." reverse/>
-                <ProjectCard url="https://www.kohus.africa/" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind', 'Mongodb']} image={kohus} title="Kohus" details="KOHUS is an online platform providing digital solution for Lawyer, Law Firm, Bar Association, and Citizens. Filing a new case, Respond to case and Search any case by number."/>
-                <ProjectCard url="https://optimalsolutions-beta.vercel.app/" tools={['Javascript', 'Next.js', 'Tailwind']} image={optimal} title="Optimal Solutions" details="OptimalSolution®, your trusted partner in comprehensive pest control solutions. With over a decade of experience and commitment to excellence, We specialise in delivering tailored pest management services for homes and businesses. Our mission is to provide effective, safe, and sustainable pest control to protect your property and ensure your peace of mind." reverse/>
-                <ProjectCard url="https://www.seakam.ng/" tools={['Javascript', 'Next.js', 'Tailwind']} image={seakam} title="Seakam" details="Seakam Global Resources Limited is a local company in Nigeria specialized in manufacturing various herbal drinks that can also be taken socially."/>
-                <ProjectCard url="https://odin-frontend-ea5h.vercel.app/" tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'CSS', 'Mongodb']} image={naijaodin} title="Naijaodin" details="NAIJAODIN is an ADs-based streaming service that allows users to watch TV shows and movies on an internet-connected device. You can also download TV shows and movies." reverse/>
-                <ProjectCard url="https://mall-beta.vercel.app/" tools={['Javascript', 'Next.js', 'Tailwind']} image={mall} title="Mall" details="An e-commerce with all the functionality any e-commerce should have. Users can filter by category,They have a cart overlay that display the products the user added to cart as well as its selected attributes, a carousel when a product have more than one picture."/>
-            </div>
+export default function Projects() {
+  return (
+    <section className="md:py-32 py-20 px-6 md:px-12 bg-gradient-mesh" id="projects">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <SectionHeading>Featured Projects</SectionHeading>
+          <p className="text-lg text-dark-navy/70 max-w-2xl mx-auto">
+            A selection of my recent work showcasing modern web applications built with cutting-edge technologies.
+          </p>
         </div>
-    )
+
+        {/* Clean grid layout - all projects in 2 columns for consistency */}
+
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="animate-fadeInUp delay-100">
+            <ProjectCard
+              url="https://www.londonianhotel.com/"
+              tools={['Next.js', 'Javascript', 'Tailwind']}
+              image={londonian}
+              title="Londonian Hotel"
+              details="Relax, recharge, and enjoy personalized service designed to make every moment special."
+            />
+          </div>
+          <div className="animate-fadeInUp delay-100">
+            <ProjectCard
+              url="https://www.investorspilot.com/"
+              tools={['Next.js', 'Javascript', 'Tailwind', 'Node js', 'Fastify']}
+              image={investor}
+              title="Investors Pilot"
+              details=" A platform that combines investment service with precision execution which stands as a global bridge for global regional investors into Dubai & international markets."
+            />
+          </div>
+          <div className="animate-fadeInUp delay-100">
+            <ProjectCard
+              url="https://mapis4u.com/"
+              tools={['Next.js', 'Redux', 'Tailwind']}
+              image={map}
+              title="MAP"
+              details="MAP ERP is built to transform Healthcare Management with unparalleled efficiency and precision "
+            />
+          </div>
+          <div className="animate-fadeInUp">
+            <ProjectCard
+              url="https://www.getwater.africa/"
+              tools={['Javascript', 'Node.js', 'Next.js', 'Fastify', 'Tailwind', 'Prisma', 'PostgreSQL', 'React native', 'Expo']}
+              image={getWater}
+              title="Get-water"
+              details="A contactless way to have clean water delivered to you. On demand delivery and meter supply of water for household and commercial businesses."
+            />
+          </div>
+
+
+          <div className="animate-fadeInUp delay-100">
+            <ProjectCard
+              url="https://www.kohus.africa/"
+              tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'Tailwind', 'Mongodb']}
+              image={kohus}
+              title="Kohus"
+              details="KOHUS is an online platform providing digital solution for Lawyers, Law Firms, Bar Association, and Citizens."
+            />
+          </div>
+
+          <div className="animate-fadeInUp delay-200">
+            <ProjectCard
+              url="https://optimalsolutions-beta.vercel.app/"
+              tools={['Javascript', 'Next.js', 'Tailwind']}
+              image={optimal}
+              title="Optimal Solutions"
+              details="Comprehensive pest control solutions with over a decade of experience in delivering tailored pest management services."
+            />
+          </div>
+
+          {/* <div className="animate-fadeInUp delay-300">
+            <ProjectCard
+              url="https://www.seakam.ng/"
+              tools={['Javascript', 'Next.js', 'Tailwind']}
+              image={seakam}
+              title="Seakam"
+              details="A local company in Nigeria specialized in manufacturing various herbal drinks that can also be taken socially."
+            />
+          </div>
+
+          <div className="animate-fadeInUp delay-400">
+            <ProjectCard
+              url="https://odin-frontend-ea5h.vercel.app/"
+              tools={['Javascript', 'Node.js', 'Next.js', 'Graphql', 'CSS', 'Mongodb']}
+              image={naijaodin}
+              title="Naijaodin"
+              details="An ADs-based streaming service that allows users to watch TV shows and movies on an internet-connected device."
+            />
+          </div>
+
+          <div className="animate-fadeInUp delay-500">
+            <ProjectCard
+              url="https://mall-beta.vercel.app/"
+              tools={['Javascript', 'Next.js', 'Tailwind']}
+              image={mall}
+              title="Mall"
+              details="An e-commerce platform with filtering, cart management, and product carousel functionality."
+            />
+          </div> */}
+        </div>
+      </div>
+    </section>
+  );
 }
